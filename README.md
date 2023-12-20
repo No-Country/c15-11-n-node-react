@@ -1,3 +1,4 @@
+![Vista Previa del Portal](https://github.com/No-Country/c15-11-n-node-react/tree/main/frontend/assets/logojob.jpg)
 
 # Portal de Empleo "JOB"
 

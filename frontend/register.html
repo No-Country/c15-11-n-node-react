@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+
+    <header>
+        <i class="bi bi-arrow-left-circle fs-2" id="goHome"></i>
+        <img src="assets/logo-job.png" alt="" id="logo-job">
+        <i class="bi bi-moon-stars fs-5 text-white-50 pe-5" id="darkMode" style="position: relative; left: -35px;"></i>
+    </header>
+
+
+    <div class="container ">
+        <div class="row min-vh-100">
+            <div class="col-lg-6 col-md-6  col-12  d-flex justify-content-center align-items-center gap-5 my-4 p-3">
+                <form id="registerForm" onsubmit="handleFormSubmit(event);">
+                    <div class="row">
+                        <h4 style="color: cadetblue;" class="py-4 fw-bolder text-center"> Creá tu cuenta y encontrá tu
+                            empleo
+                            ideal
+                        </h4>
+
+                        <h5 class="fw-light  p-2 text-center">Completá la información de tu usuario</h5>
+                        <hr>
+                        <br>
+                        <div class="col-lg-6 col-12 my-1">
+                            <label for="nombre">Nombre(s):</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre(s)..." required>
+                        </div>
+
+                        <div class="col-lg-6 col-12 my-1">
+                            <label for="apellido">Apellido(s):</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido(s)..."
+                                required>
+                        </div>
+
+                        <div class="col-lg-6 col-12 my-1">
+                            <label for="correo"> Email:</label>
+                            <input type="email" id="correo" name="correo" placeholder="Ingresa tu email..." required>
+                        </div>
+
+                        <div class="col-lg-6 col-12 my-1">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña..."
+                                required>
+                        </div>
+
+                        <div class="col-lg-6 col-12 my-1">
+                            <label for="confirmPassword">Confirmar Contraseña:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                placeholder="Confirma tu contraseña..." required>
+                        </div>
+
+                        <!-- CHECKBOX Toogle Registrar Empresa -->
+                        <div class="col-12 d-flex justify-content-center align-items-center pe-4 pt-1">
+                            <div class="form-check ms-3 mt-3 d-flex">
+                                <input class="form-check-input" type="checkbox" id="registrar_empresa"
+                                    data-bs-toggle="collapse" data-bs-target="#form_empresa_content"
+                                    onclick="toggleEmpresaForm()" style="border: 1px solid black;">
+                                <label for="registrar_empresa" class="form-check-label ms-2 p-1">Registrar como
+                                    empresa</label>
+                            </div>
+                        </div>
+                        <!-- END - CHECKBOX Toogle Registrar Empresa -->
+
+                        <!-- MESSAGE INFORM REQUEST -->
+                        <div id="msg-inform-request" class="d-none text-center">
+                            <p id="msg-inform-p"></p>
+                        </div>
+
+
+                        <!-- Collapse Form Empresa -->
+                        <div class="collapse my-3 row" id="form_empresa_content">
+
+                            <h6 class=" fw-light fs-5 p-2 text-center">Completá la información de la empresa</h6>
+                            <hr>
+                            <br>
+
+                            <div class="col-lg-6 col-12 my-1">
+                                <label for="nombre-empresa">Nombre de la empresa:</label>
+                                <input type="text" id="nombre-empresa" name="nombre-empresa"
+                                    placeholder="Ingresa nombre de la empresa...">
+                            </div>
+
+                            <div class="col-lg-6 col-12 my-1">
+                                <label for="razon-social">Razon Social:</label>
+                                <input type="text" id="razon-social" name="razon-social"
+                                    placeholder="Ingresa razon social...">
+                            </div>
+
+                            <div class="col-lg-6 col-12 my-1">
+                                <label for="direccion"> Dirección:</label>
+                                <input type="text" id="direccion" name="direccion"
+                                    placeholder="Ingresa la dirección...">
+                            </div>
+
+                            <div class="col-lg-6 col-12 my-1">
+                                <div class="form-group ">
+                                    <label for="selecSector" class="form-label">Numero de trabajores:</label>
+                                    <select class="form-control border-black" id="cantidadTrabajadores">
+                                        i<option selected disabled> Seleccioná el rango </option>
+                                        <option value="1">De 1 a 10 trabajadores</option>
+                                        <option value="2">De 11 a 50 trabajadores</option>
+                                        <option value="3">De 51 a 200 trabajadores</option>
+                                        <option value="4">De 201 a 500 trabajadores</option>
+                                        <option value="5">De 501 a 1000 trabajadores</option>
+                                        <option value="6">Más de 1000 trabajadores</option>
+                                    </select>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 my-1">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="number" id="telefono" name="telefono" placeholder="Ingresa el teléfono...">
+                            </div>
+
+
+                            <div class="col-lg-6 col-12 my-1">
+                                <div class="form-group ">
+                                    <label for="selectSector" class="form-label">Sector:</label>
+                                    <select class="form-control border-black" id="selectSector">
+                                        <option selected disabled>Seleccioná el sector</option>
+                                        <option value="1">Agricultura, Pesca, Ganadería</option>
+                                        <option value="2">Construcción, obras</option>
+                                        <option value="3">Educación</option>
+                                        <option value="4">Energía</option>
+                                        <option value="5">Entretenimiento, Deportes</option>
+                                        <option value="6">Fabricación</option>
+                                        <option value="7">Finanzas, Banca</option>
+                                        <option value="8">Gobierno, No Lucro</option>
+                                        <option value="9">Hostelería, Turismo</option>
+                                        <option value="10">Informática, Hardware</option>
+                                        <option value="11">Informática, Software</option>
+                                        <option value="12">Internet</option>
+                                        <option value="13">Legal, Asesoría</option>
+                                        <option value="14">Materias Primas</option>
+                                        <option value="15">Medios de Comunicación</option>
+                                        <option value="16">Publicidad, RRPP</option>
+                                        <option value="17">RRHH, Personal</option>
+                                        <option value="18">Salud, Medicina</option>
+                                        <option value="19">Servicios Profesionales</option>
+                                        <option value="20">Telecomunicaciones</option>
+                                        <option value="21">Transporte</option>
+                                        <option value="22">Venta al consumidor</option>
+                                        <option value="23">Venta al por mayor</option>
+                                    </select>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- END - Collapse Form Empresa -->
+
+                    </div>
+
+                    <div class="container-btn d-flex justify-content-center ali">
+                        <button type="submit" style="width: 70%;" class="text-center">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6  col-12 d-flex justify-content-center align-items-center ">
+                <div class="container ">
+                    <img src="./assets/workersLeft.svg" alt="" class="img-fluid p-5">
+                    <img src="./assets/workersRight.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/register.js"></script>
+
+</body>
+
+</html>

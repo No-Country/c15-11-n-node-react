@@ -34,6 +34,5 @@ Bienvenido al repositorio del proyecto **Portal de Empleo**. Este portal fue des
 ### [Diego A. Ormeño](https://github.com/rijmjada)
 <img src="https://avatars.githubusercontent.com/u/72719844?s=400&u=45570604d00221e6b17818a08a4601009d44b971&v=4" width="150px" alt="Foto de Perfil">
 
-<a href="https://www.linkedin.com/in/diego-ormeño/" title="LinkedIn" class="btn btn-linkedin btn-lg" style="background: #0E76A8; border-radius: 0; color: #fff; border-width: 1px; border-style: solid; border-color: #084461; text-decoration: none; display: inline-block;">
-  <i class="fa fa-linkedin fa-fw"></i> LinkedIn
-</a>
+
+<p align="left"> <a href="https://www.linkedin.com/in/diego-ormeño" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /> </picture> </a></p>

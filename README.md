@@ -30,6 +30,6 @@ Bienvenido al repositorio del proyecto **Portal de Empleo**. Este portal fue des
 ## Integrantes:
 
 ### [Diego A. Ormeño](https://github.com/rijmjada)
-![Foto de Perfil](https://avatars.githubusercontent.com/u/72719844?s=400&u=4dd5e7eea89197902b934e2fc115c6b6a9334194&v=4)
+![Foto de Perfil](https://avatars.githubusercontent.com/u/72719844?s=400&u=45570604d00221e6b17818a08a4601009d44b971&v=4)
 
 - **LinkedIn:** [https://www.linkedin.com/in/diego-ormeño/]

@@ -1,8 +1,6 @@
 
 <style>
-    img {
-        max-width: 100px;
-    }
+    
 </style>
 
 ![Vista Previa del Portal](https://github.com/No-Country/c15-11-n-node-react/blob/main/frontend/assets/joblogo.jpg)
@@ -37,6 +35,8 @@ Bienvenido al repositorio del proyecto **Portal de Empleo**. Este portal fue des
 ## Integrantes:
 
 ### [Diego A. Ormeño](https://github.com/rijmjada)
-<img src="https://avatars.githubusercontent.com/u/72719844?s=400&u=45570604d00221e6b17818a08a4601009d44b971&v=4"  alt="Foto de Perfil">
+<img src="https://avatars.githubusercontent.com/u/72719844?s=400&u=45570604d00221e6b17818a08a4601009d44b971&v=4" width="80px" alt="Foto de Perfil">
 
-- **LinkedIn:** [https://www.linkedin.com/in/diego-ormeño/]
+<a href="https://www.linkedin.com/in/diego-ormeño/" title="LinkedIn" class="btn btn-linkedin btn-lg" style="background: #0E76A8; border-radius: 0; color: #fff; border-width: 1px; border-style: solid; border-color: #084461; text-decoration: none; display: inline-block;">
+  <i class="fa fa-linkedin fa-fw"></i> LinkedIn
+</a>
